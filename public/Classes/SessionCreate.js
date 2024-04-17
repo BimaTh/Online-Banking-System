@@ -41,7 +41,7 @@ module.exports = class Session {
         return true; 
     }
 
-    async CreateUser(name, email, password, age, address){
+    async CreateUser({name, email, password, age, address}){
 
         let newUser = new this.dataBase.userDataBase({
             name,
